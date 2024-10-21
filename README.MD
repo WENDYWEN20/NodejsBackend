@@ -1,0 +1,1 @@
+Product and user routes showed CURD functions to MongoDB database.

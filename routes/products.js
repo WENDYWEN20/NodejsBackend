@@ -68,7 +68,7 @@ router.post("/", async (req, res, next) => {
 
 router.put('/:id', async (req,res)=>{
     try{
-        const updateProduct=await Product.findByIdAndDelete(req.params.id, req.body, {new:true})
+        const updateProduct=await Product.findByIdAndUpdate(req.params.id, req.body, {new:true})
         res.send(updateProduct)
         console.log(updateProduct)
     }
