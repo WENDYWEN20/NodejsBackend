@@ -1,27 +1,27 @@
 import mongoose from 'mongoose'
 const data=[
     {username:'user1',
-    emailaddress:'user1@gmail.com',
+    email:'user1@gmail.com',
     },
 
     {username:'user2',
-    emailaddress:'user2@gmail.com',
+    email:'user2@gmail.com',
    },
 
     {username:'user3',
-            emailaddress:'user3@gmail.com',
+            email:'user3@gmail.com',
             },
     ]
 
 const usersSchema= new mongoose.Schema({
-    name:{  type: String,
+    username:{  type: String,
         required: true,
         minLength: 3,
         maxLength: 50,
     },
     email:{    type: String,
         required: true,
-        minLength: 12,
+        minLength: 8,
         maxLength: 1200,
     },
    
